@@ -1,0 +1,35 @@
+In an undirected graph, means that node and node are connected with an undirected edge of weight 1.
+The nodes are numbered from 0 to 4, and the edges are: (0,1), (1,4), (0,2), (2,3), (3,4).
+Q: Give the shortest path from node 0 to node 4.
+A: Using BFS, we start at node 0. Its neighbors are [1, 2]. Add them to the queue.
+Visit node 1, whose neighbors are [0, 4]. Add node 4 to the queue.
+Visit node 2, whose neighbors are [0, 3].
+Finally, visit node 4 and backtrack to reconstruct the path.
+The shortest path from node 0 to node 4 is 0, 1, 4 with a total weight of 2.
+
+In an undirected graph, means that node and node are connected with an undirected edge of weight 1.
+The nodes are numbered from 0 to 4, and the edges are: (3,2), (3,4), (2,1), (4,1), (3,0), (0,4), (0,2).
+Q: Give the shortest path from node 3 to node 1.
+A: Using BFS, we start at node 3. Its neighbors are [2, 4, 0]. Add them to the queue.
+Visit node 2, whose neighbors are [1, 3, 0]. Add node 1 to the queue.
+Visit node 4, whose neighbors are [3, 1, 0].
+Finally, visit node 1 and backtrack to reconstruct the path.
+The shortest path from node 3 to node 1 is 3, 2, 1 with a total weight of 2.
+
+In an undirected graph, means that node and node are connected with an undirected edge of weight 1.
+The nodes are numbered from 0 to 5, and the edges are: (4,5), (5,1), (1,0), (1,2), (0,2), (4,1).
+Q: Give the shortest path from node 4 to node 2.
+A: Using BFS, we start at node 4. Its neighbors are [5, 1]. Add them to the queue.
+Visit node 5, whose neighbors are [4, 1]. Add node 1 to the queue.
+Visit node 1, whose neighbors are [4, 5, 0, 2]. Add node 2 to the queue.
+Finally, visit node 2 and backtrack to reconstruct the path.
+The shortest path from node 4 to node 2 is 4, 5, 1, 2 with a total weight of 3.
+
+In an undirected graph, means that node and node are connected with an undirected edge of weight 1.
+The nodes are numbered from 0 to 6, and the edges are: (2,1), (2,5), (2,3), (1,0), (5,0), (3,0).
+Q: Give the shortest path from node 2 to node 0.
+A: Using BFS, we start at node 2. Its neighbors are [1, 5, 3]. Add them to the queue.
+Visit node 1, whose neighbors are [0, 2]. Add node 0 to the queue.
+Visit node 5, whose neighbors are [2, 0].
+Finally, visit node 0 and backtrack to reconstruct the path.
+The shortest path from node 2 to node 0 is 2, 1, 0 with a total weight of 2.
